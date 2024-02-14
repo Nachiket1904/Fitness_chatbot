@@ -21,7 +21,7 @@ def search_videos(query, max_results=5):
         return []
 
 # Streamlit App Layout
-st.title("FitBot - Your Personal Gym Trainer")
+st.title("FitPal: Interactive Fitness Coach")
 
 # Input fields
 client_info = st.text_area("Talk with Fit", help="Enter your message here")
