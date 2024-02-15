@@ -1,3 +1,4 @@
 transformers
 streamlit
-pip install youtube-search
+youtube-search
+tensorflow
