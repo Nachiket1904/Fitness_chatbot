@@ -1,55 +1,73 @@
-Here's the README.md file with markdown code:
+# FitPal: Interactive Fitness Coach
 
-**HealthBot - Your Personal Health Assistant**
-=============================================
+FitPal is an innovative chatbot designed to act as your personal fitness coach. Leveraging the power of advanced AI, FitPal offers workout advice, exercise recommendations, and video demonstrations, making it easier than ever to achieve your fitness goals.
 
-### Overview
+## Features
 
-HealthBot is a chatbot application that provides health-related information and assistance to users. It uses Together's API to generate responses to user queries and also suggests relevant YouTube videos.
+### Engage with Your Personal Fitness Coach:
+Chat with FitPal for personalized advice on your workout routines. Utilizing OpenAI's advanced text generation models, FitPal provides you with insights and guidance tailored to your fitness journey.
 
-### Features
+### Tailored Fitness Guidance:
+Share details such as your height, age, weight, and fitness goals to receive custom workout recommendations designed just for you.
 
-* **Chatbot Interface**: A user-friendly interface using Streamlit to interact with the chatbot.
-* **Response Generation**: Generates responses to user queries using Together's API.
-* **Video Suggestions**: Suggests relevant YouTube videos based on user queries.
-* **Chat History**: Stores chat history for user reference.
+### Explore Video Demonstrations:
+For visual learners or those seeking detailed exercise instructions, FitPal can search for and provide YouTube video links to ensure you have the best information at your fingertips.
 
-### Getting Started
+## How It Works
 
-#### Prerequisites
+FitPal is powered by advanced AI models using the Together API. Here's how it operates:
 
-* Python 3.8 or higher
-* Streamlit
-* Together's API key (create a `.env` file and add your API key as `TOGETHER_API_KEY`)
+1. **Natural Language Understanding**: 
+   - **Tag**: #NLU
+   - Description: FitPal leverages Together's state-of-the-art language models to understand user inputs and generate contextually appropriate responses.
 
-#### Installation
+2. **Custom Prompt Design**:
+   - **Tag**: #PromptEngineering
+   - Description: A carefully crafted system prompt sets the tone for FitPal to focus on fitness and health guidance.
 
-1. Clone the repository: `git clone https://github.com/your-username/HealthBot.git`
-2. Install the required libraries: `pip install -r requirements.txt`
-3. Run the application: `streamlit run main.py`
+3. **YouTube Integration**:
+   - **Tag**: #YouTubeSearch
+   - Description: FitPal uses the `youtube-search` library to fetch relevant exercise and fitness videos from YouTube, providing users with additional learning resources.
 
-### Usage
+4. **Streamlit for Interface**:
+   - **Tag**: #UserInterface
+   - Description: The chatbot interface is built using Streamlit, ensuring a user-friendly and interactive experience.
 
-1. Open the application in your web browser: `http://localhost:8501`
-2. Type your health-related query in the chat input box.
-3. Press Enter to submit your query.
-4. HealthBot will generate a response and suggest relevant YouTube videos.
-5. You can continue chatting with HealthBot to get more information and assistance.
+The Together API enables FitPal to dynamically generate fitness guidance based on user queries. By combining AI-powered text generation with YouTube video searches, FitPal ensures a holistic approach to fitness coaching.
 
-### Note
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/fitpal.git
+   cd fitpal
+   ```
 
-* This application is for demonstration purposes only and should not be used for medical diagnosis or treatment.
-* The chatbot's responses are generated based on the input query and may not always be accurate or up-to-date.
-* You can customize the application by modifying the code and adding more features.
+2. Create a virtual environment and activate it:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use venv\Scripts\activate
+   ```
 
-### Contributing
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Contributions are welcome! If you'd like to contribute to HealthBot, please fork the repository and submit a pull request.
+4. Create a `.env` file in the root directory and add the following:
+   ```plaintext
+   TOGETHER_API_KEY=your_api_key_here
+   ```
 
-### License
+## Usage
+Run the application with Streamlit:
+```bash
+streamlit run main.py
+```
 
-HealthBot is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+## Notes
+- Make sure to replace `your_api_key_here` in the `.env` file with your actual Together API key.
+- The `.env` file should not be shared or pushed to GitHub to keep your API key secure.
 
-### Contact
+## License
+This project is licensed under the MIT License.
 
-If you have any questions or need further assistance, please contact [your-email@example.com](mailto:your-email@example.com).
