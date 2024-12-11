@@ -1,56 +1,55 @@
-# FitPal: Interactive Fitness Coach
-FitPal is an innovative chatbot designed to act as your personal fitness coach. Leveraging the power of advanced AI, FitPal offers workout advice, exercise recommendations, and video demonstrations, making it easier than ever to achieve your fitness goals.
+Here's the README.md file with markdown code:
 
-## Features
-### Engage with Your Personal Fitness Coach:
-Chat with FitPal for personalized advice on your workout routines. Utilizing OpenAI's advanced text generation models, FitPal provides you with insights and guidance tailored to your fitness journey.
+**HealthBot - Your Personal Health Assistant**
+=============================================
 
-### Tailored Fitness Guidance:
-Share details such as your height, age, weight, and fitness goals to receive custom workout recommendations designed just for you.
+### Overview
 
-### Explore Video Demonstrations:
-For visual learners or those seeking detailed exercise instructions, FitPal can search for and provide YouTube video links to ensure you have the best information at your fingertips.
+HealthBot is a chatbot application that provides health-related information and assistance to users. It uses Together's API to generate responses to user queries and also suggests relevant YouTube videos.
 
-## Installation
+### Features
 
-### Clone the Repository
+* **Chatbot Interface**: A user-friendly interface using Streamlit to interact with the chatbot.
+* **Response Generation**: Generates responses to user queries using Together's API.
+* **Video Suggestions**: Suggests relevant YouTube videos based on user queries.
+* **Chat History**: Stores chat history for user reference.
 
-Start by cloning the FitPal repository to your local machine:
+### Getting Started
 
-```bash
-git clone https://github.com/YourUsername/FitPal-Interactive-Fitness-Coach.git
-cd FitPal-Interactive-Fitness-Coach
-```
+#### Prerequisites
 
-### Install Dependencies
-Install all necessary libraries by running:
+* Python 3.8 or higher
+* Streamlit
+* Together's API key (create a `.env` file and add your API key as `TOGETHER_API_KEY`)
 
-```bash
-pip install -r requirements.txt
-```
+#### Installation
 
-### Launch FitPal
-Begin your fitness journey with FitPal:
+1. Clone the repository: `git clone https://github.com/your-username/HealthBot.git`
+2. Install the required libraries: `pip install -r requirements.txt`
+3. Run the application: `streamlit run main.py`
 
-```bash
-streamlit run fitpal.py
-```
-## How to Use FitPal
-- **Starting the Conversation**: Initiate your dialogue with FitPal by entering your query in the "Talk with Fit" section for instant fitness advice.
-- **Personalizing Your Experience**: Provide your personal details in the "Client Info" section to receive workout recommendations that meet your specific needs.
-- **Finding Instructional Videos**: Input your video request in the "Search for Video" section to have FitPal find relevant YouTube videos for you.
-- **Viewing Responses and Videos**: Interact with FitPal's advice and the video links provided directly within the Streamlit app interface.
+### Usage
 
-### Examples
-FitPal comes with a variety of example prompts to help you get started. These examples cover common fitness queries to demonstrate how you can interact with the chatbot for insights and guidance.
+1. Open the application in your web browser: `http://localhost:8501`
+2. Type your health-related query in the chat input box.
+3. Press Enter to submit your query.
+4. HealthBot will generate a response and suggest relevant YouTube videos.
+5. You can continue chatting with HealthBot to get more information and assistance.
+
+### Note
+
+* This application is for demonstration purposes only and should not be used for medical diagnosis or treatment.
+* The chatbot's responses are generated based on the input query and may not always be accurate or up-to-date.
+* You can customize the application by modifying the code and adding more features.
+
+### Contributing
+
+Contributions are welcome! If you'd like to contribute to HealthBot, please fork the repository and submit a pull request.
 
 ### License
-This project is made available under the MIT License. For more details, see the LICENSE file.
 
-## Acknowledgments
+HealthBot is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
-FitPal is powered by the following technologies:
+### Contact
 
-- **Hugging Face's Transformers**: Utilized for generating personalized fitness advice through the pretrained GPT-2 model.
-- **Streamlit**: Employed to create an engaging web app interface for user interactions.
-- **Youtube-Search-Python**: Integrated for seamless searching and retrieval of instructional fitness videos on YouTube.
+If you have any questions or need further assistance, please contact [your-email@example.com](mailto:your-email@example.com).
