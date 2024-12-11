@@ -1,4 +1,5 @@
-transformers
 streamlit
 youtube-search
-tensorflow
+colorama
+together
+python-dotenv
