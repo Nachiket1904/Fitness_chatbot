@@ -49,7 +49,7 @@ def generate_response_with_together(user_query):
     return model_out
 
 # Streamlit App Layout
-st.title("HealthBot - Your Personal Health Assistant")
+st.title("FitPal - Your Personal Health Assistant")
 
 # Chatbot interface using Streamlit's chat_input
 if 'messages' not in st.session_state:
